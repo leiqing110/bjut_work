@@ -1,0 +1,122 @@
+2021-11-11 19:10:21,589 INFO    MainThread:10994 [internal.py:wandb_internal():88] W&B internal server running at pid: 10994, started at: 2021-11-11 19:10:21.588669
+2021-11-11 19:10:21,590 DEBUG   HandlerThread:10994 [handler.py:handle_request():124] handle_request: check_version
+2021-11-11 19:10:21,591 INFO    WriterThread:10994 [datastore.py:open_for_write():80] open: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/run-31jemn5v.wandb
+2021-11-11 19:10:21,592 DEBUG   SenderThread:10994 [sender.py:send():179] send: header
+2021-11-11 19:10:21,593 DEBUG   SenderThread:10994 [sender.py:send_request():193] send_request: check_version
+2021-11-11 19:10:24,811 DEBUG   SenderThread:10994 [sender.py:send():179] send: run
+2021-11-11 19:10:24,826 INFO    SenderThread:10994 [sender.py:_maybe_setup_resume():401] checking resume status for None/YOLOv5/31jemn5v
+2021-11-11 19:10:26,559 INFO    SenderThread:10994 [dir_watcher.py:__init__():168] watching files in: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files
+2021-11-11 19:10:26,559 INFO    SenderThread:10994 [sender.py:_start_run_threads():704] run started: 31jemn5v with start time 1636629021
+2021-11-11 19:10:26,566 DEBUG   SenderThread:10994 [sender.py:send():179] send: summary
+2021-11-11 19:10:26,566 INFO    SenderThread:10994 [sender.py:_save_file():829] saving file wandb-summary.json with policy end
+2021-11-11 19:10:26,568 DEBUG   HandlerThread:10994 [handler.py:handle_request():124] handle_request: run_start
+2021-11-11 19:10:26,571 DEBUG   HandlerThread:10994 [meta.py:__init__():39] meta init
+2021-11-11 19:10:26,571 DEBUG   HandlerThread:10994 [meta.py:__init__():53] meta init done
+2021-11-11 19:10:26,571 DEBUG   HandlerThread:10994 [meta.py:probe():210] probe
+2021-11-11 19:10:26,577 DEBUG   HandlerThread:10994 [meta.py:_setup_git():200] setup git
+2021-11-11 19:10:26,593 DEBUG   HandlerThread:10994 [meta.py:_setup_git():207] setup git done
+2021-11-11 19:10:26,593 DEBUG   HandlerThread:10994 [meta.py:_save_pip():57] save pip
+2021-11-11 19:10:26,593 DEBUG   HandlerThread:10994 [meta.py:_save_pip():71] save pip done
+2021-11-11 19:10:26,593 DEBUG   HandlerThread:10994 [meta.py:_save_conda():78] save conda
+2021-11-11 19:10:26,598 ERROR   HandlerThread:10994 [meta.py:_save_conda():85] Error saving conda packages
+Traceback (most recent call last):
+  File "/home/lab716/anaconda3/envs/yolov5/lib/python3.8/site-packages/wandb/sdk/internal/meta.py", line 83, in _save_conda
+    subprocess.call(["conda", "env", "export"], stdout=f)
+  File "/home/lab716/anaconda3/envs/yolov5/lib/python3.8/subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/lab716/anaconda3/envs/yolov5/lib/python3.8/subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/lab716/anaconda3/envs/yolov5/lib/python3.8/subprocess.py", line 1702, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2021-11-11 19:10:26,599 DEBUG   HandlerThread:10994 [meta.py:_save_conda():86] save conda done
+2021-11-11 19:10:26,599 DEBUG   HandlerThread:10994 [meta.py:probe():252] probe done
+2021-11-11 19:10:26,631 DEBUG   SenderThread:10994 [sender.py:send():179] send: files
+2021-11-11 19:10:26,631 INFO    SenderThread:10994 [sender.py:_save_file():829] saving file wandb-metadata.json with policy now
+2021-11-11 19:10:26,638 DEBUG   HandlerThread:10994 [handler.py:handle_request():124] handle_request: stop_status
+2021-11-11 19:10:26,639 DEBUG   SenderThread:10994 [sender.py:send_request():193] send_request: stop_status
+2021-11-11 19:10:27,152 DEBUG   SenderThread:10994 [sender.py:send():179] send: config
+2021-11-11 19:10:27,153 DEBUG   SenderThread:10994 [sender.py:send():179] send: config
+2021-11-11 19:10:27,561 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/requirements.txt
+2021-11-11 19:10:27,562 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/wandb-summary.json
+2021-11-11 19:10:27,562 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/conda-environment.yaml
+2021-11-11 19:10:27,562 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:10:27,562 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/wandb-metadata.json
+2021-11-11 19:10:27,884 INFO    Thread-11 :10994 [upload_job.py:push():133] Uploaded file /tmp/tmppro0apuiwandb/12zsnnap-wandb-metadata.json
+2021-11-11 19:10:29,560 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/config.yaml
+2021-11-11 19:10:29,561 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:10:31,561 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:10:33,562 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:10:37,564 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:10:42,166 DEBUG   HandlerThread:10994 [handler.py:handle_request():124] handle_request: stop_status
+2021-11-11 19:10:42,166 DEBUG   SenderThread:10994 [sender.py:send_request():193] send_request: stop_status
+2021-11-11 19:10:45,568 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:10:47,568 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:10:49,569 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:10:51,572 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:10:53,573 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:10:54,960 DEBUG   SenderThread:10994 [sender.py:send():179] send: stats
+2021-11-11 19:10:55,574 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:10:57,575 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:10:57,774 DEBUG   HandlerThread:10994 [handler.py:handle_request():124] handle_request: stop_status
+2021-11-11 19:10:57,774 DEBUG   SenderThread:10994 [sender.py:send_request():193] send_request: stop_status
+2021-11-11 19:10:59,576 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:01,578 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:03,580 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:05,581 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:07,583 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:09,585 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:11,586 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:13,439 DEBUG   HandlerThread:10994 [handler.py:handle_request():124] handle_request: stop_status
+2021-11-11 19:11:13,440 DEBUG   SenderThread:10994 [sender.py:send_request():193] send_request: stop_status
+2021-11-11 19:11:13,588 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:15,590 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:17,593 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:19,594 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:21,595 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:23,599 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:25,371 DEBUG   SenderThread:10994 [sender.py:send():179] send: stats
+2021-11-11 19:11:25,600 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:27,601 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:29,072 DEBUG   HandlerThread:10994 [handler.py:handle_request():124] handle_request: stop_status
+2021-11-11 19:11:29,073 DEBUG   SenderThread:10994 [sender.py:send_request():193] send_request: stop_status
+2021-11-11 19:11:29,601 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:31,602 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:33,603 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:35,604 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:37,605 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:39,606 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:41,606 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:43,607 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:44,616 DEBUG   HandlerThread:10994 [handler.py:handle_request():124] handle_request: stop_status
+2021-11-11 19:11:44,616 DEBUG   SenderThread:10994 [sender.py:send_request():193] send_request: stop_status
+2021-11-11 19:11:45,608 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:47,608 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:49,610 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:51,610 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:53,611 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:55,612 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:55,701 DEBUG   SenderThread:10994 [sender.py:send():179] send: stats
+2021-11-11 19:11:57,612 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:11:59,613 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:12:00,198 DEBUG   HandlerThread:10994 [handler.py:handle_request():124] handle_request: stop_status
+2021-11-11 19:12:00,198 DEBUG   SenderThread:10994 [sender.py:send_request():193] send_request: stop_status
+2021-11-11 19:12:01,614 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:12:03,615 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:12:05,615 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:12:07,616 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:12:09,617 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:12:11,618 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:12:13,619 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:12:15,619 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:12:15,859 DEBUG   HandlerThread:10994 [handler.py:handle_request():124] handle_request: stop_status
+2021-11-11 19:12:15,859 DEBUG   SenderThread:10994 [sender.py:send_request():193] send_request: stop_status
+2021-11-11 19:12:17,620 INFO    Thread-8  :10994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/lab716/seagate8T/zhanglei/YOLOv5-Lite/wandb/run-20211111_191021-31jemn5v/files/output.log
+2021-11-11 19:12:18,926 WARNING MainThread:10994 [internal.py:wandb_internal():147] Internal process interrupt: 1
+2021-11-11 19:12:18,962 DEBUG   SenderThread:10994 [sender.py:send():179] send: files
+2021-11-11 19:12:18,962 INFO    SenderThread:10994 [sender.py:_save_file():829] saving file media/images/Labels_0_0.jpg with policy now
+2021-11-11 19:12:18,963 DEBUG   SenderThread:10994 [sender.py:send():179] send: files
+2021-11-11 19:12:18,963 INFO    SenderThread:10994 [sender.py:_save_file():829] saving file media/images/Labels_0_1.jpg with policy now
+2021-11-11 19:12:18,966 DEBUG   SenderThread:10994 [sender.py:send():179] send: history
+2021-11-11 19:12:18,966 DEBUG   SenderThread:10994 [sender.py:send():179] send: summary
+2021-11-11 19:12:18,967 INFO    SenderThread:10994 [sender.py:_save_file():829] saving file wandb-summary.json with policy end

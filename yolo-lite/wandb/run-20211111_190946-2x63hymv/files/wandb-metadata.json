@@ -1,0 +1,24 @@
+{
+    "os": "Linux-4.15.0-142-generic-x86_64-with-glibc2.10",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-11-11T11:09:49.440666",
+    "startedAt": "2021-11-11T11:09:46.354397",
+    "docker": null,
+    "gpu": "GeForce GTX 1080 Ti",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": "10.0.130",
+    "args": [],
+    "state": "running",
+    "program": "/home/lab716/seagate8T/zhanglei/YOLOv5-Lite/train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ppogg/YOLOv5-Lite.git",
+        "commit": "d0c5e4ff6cc445ae625c1a95fbcd9ca531a20913"
+    },
+    "email": "you@example.com",
+    "root": "/home/lab716/seagate8T/zhanglei/YOLOv5-Lite",
+    "host": "lab716-System-Product-Name",
+    "username": "lab716",
+    "executable": "/home/lab716/anaconda3/envs/yolov5/bin/python"
+}
